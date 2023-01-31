@@ -1,0 +1,99 @@
+.services_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #eeeeeeaf;
+    left: -10%;
+    top: -20%;
+    z-index: -1;
+}
+
+
+.services_main h2 {
+    color: #7E7E7E;
+    position: relative;
+    margin: 0 auto;
+}
+
+.services_main h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 6px;
+    background-color: #EF5025;
+}
+
+.services_div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.first_div, .second_div{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.second_div{
+    justify-content: flex-end;
+}
+.services_img {
+    width: 90%;
+    height: auto;
+}
+
+.each_service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.check_icon{
+    color: #EF5025;
+    font-size: 25px;
+}
+.service_detail{
+    font-size: 16px;
+    color: #343434;
+}
+
+@media (max-width:1000px) {
+    .services_div{
+        width: 90%;
+    }
+    .overlay{
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+@media (max-width:750px) {
+    .services_div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .first_div, .second_div{
+        width: 100%;
+    }
+    .overlay{
+        display: none;
+    }
+}
