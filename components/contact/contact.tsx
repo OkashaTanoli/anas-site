@@ -25,7 +25,7 @@ function Contact() {
                                     <p className='contact_text'>
                                         {val.text}
                                         <br />
-                                        {val.location && <a href={val.location} style={{textDecoration:'none'}}>View On Google Map</a>}
+                                        {val.location && <a href={val.location} target='_blank' rel="noreferrer" style={{textDecoration:'none'}}>View On Google Map</a>}
                                     </p>
                                 </div>
                             )
