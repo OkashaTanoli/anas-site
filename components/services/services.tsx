@@ -5,11 +5,16 @@ import './services.css'
 import Img from '../../public/services.png'
 
 let services = [
-    "Web App Developemnt",
-    "E-Commerce Development",
-    "Blog Site Development",
+    "Web and Mobile App Developemnt",
+    "Emmbeded System Design and Developemnt",
+    "IoT System Application Developemnt",
+    "Smart Home Automation",
     "AI App Development",
-    "Social Media App Development",
+    "ML Sys Development",
+    "Android App Developemnt",
+    "iOS App Developemnt",
+    "E-Commerce Development",
+    "Portfolio Site Development",
 ]
 
 
