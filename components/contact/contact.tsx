@@ -7,9 +7,9 @@ import { MdEmail, MdLocationOn } from 'react-icons/md'
 
 
 let data = [
-    { Icon: <BsFillTelephoneFill className='contact_icon' />, text: '0333-3333333' },
-    { Icon: <MdEmail className='contact_icon' />, text: 'abc@gmail.com' },
-    { Icon: <MdLocationOn className='contact_icon' />, text: 'abc area karachi' },
+    { Icon: <BsFillTelephoneFill className='contact_icon' />, text: '0341-1128013' },
+    { Icon: <MdEmail className='contact_icon' />, text: 'macubesoft@gmail.com' },
+    { Icon: <MdLocationOn className='contact_icon' />, text: 'Macubesoft | Rehmat Mall Main Road Korangi No.4 Karachi </br> https://goo.gl/maps/m4Cgqn3LXmKNGx5X6' },
 ]
 function Contact() {
     return (
