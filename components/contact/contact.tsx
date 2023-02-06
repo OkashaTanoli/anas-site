@@ -7,9 +7,9 @@ import { MdEmail, MdLocationOn } from 'react-icons/md'
 
 
 let data = [
-    { Icon: <BsFillTelephoneFill className='contact_icon' />, text: '0341-1128013' },
-    { Icon: <MdEmail className='contact_icon' />, text: 'macubesoft@gmail.com' },
-    { Icon: <MdLocationOn className='contact_icon' />, text: 'Macubesoft | Rehmat Mall Main Road Korangi No.4 Karachi </br> https://goo.gl/maps/m4Cgqn3LXmKNGx5X6' },
+    { Icon: <BsFillTelephoneFill className='contact_icon' size={25} />, text: '0341-1128013' },
+    { Icon: <MdEmail className='contact_icon' size={25} />, text: 'macubesoft@gmail.com' },
+    { Icon: <MdLocationOn className='contact_icon' size={25} />, text: 'Macubesoft | Rehmat Mall Main Road Korangi No.4 Karachi ', location: 'https://goo.gl/maps/m4Cgqn3LXmKNGx5X6' },
 ]
 function Contact() {
     return (
@@ -22,7 +22,11 @@ function Contact() {
                             return (
                                 <div className='contact_individual' key={index}>
                                     {val.Icon}
-                                    <p className='contact_text'>{val.text}</p>
+                                    <p className='contact_text'>
+                                        {val.text}
+                                        <br />
+                                        {val.location && <a href={val.location} style={{textDecoration:'none'}}>View On Google Map</a>}
+                                    </p>
                                 </div>
                             )
                         })
