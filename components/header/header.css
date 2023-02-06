@@ -11,6 +11,7 @@
 }
 
 .menu_item {
+    font-weight: 600;
     display: flex;
     width: 300px;
     justify-content: space-between;
